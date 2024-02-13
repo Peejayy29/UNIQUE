@@ -18,6 +18,10 @@ body {
     align-items: center; /* Center vertically */
 }
 
+.container h1 span {
+    color: #f04318;
+}
+
 header {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.900), rgba(255, 255, 255, 0.900));
     color: #333;
@@ -78,6 +82,10 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+.hero-content h2 span {
+    color: #f04318;
+}
+
 .btn {
     padding: 10px 20px;
     background: linear-gradient(to right, #ed461d, #ed0037);
@@ -92,7 +100,7 @@ nav ul li a:hover {
 }
 
 .btn-submit {
-    background: linear-gradient(to right, #ff7e5f, #ff4e78); /* Same gradient as products button */
+    background: linear-gradient(to right, #fc5025, #f90b43); /* Same gradient as products button */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -170,4 +178,58 @@ footer {
     #nav-icon.open span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+}
+
+/* form styling */
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff7e5f; /* Highlight border color on focus */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px; /* Adjust height as needed */
+}
+
+.btn {
+    padding: 15px 40px;
+    background: linear-gradient(to right, #f33c0f, #fa013b);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.btn:hover {
+    filter: brightness(90%);
 }
