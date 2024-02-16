@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 .hero-content p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .hero-content h2 span {
@@ -228,8 +228,127 @@ footer {
     border: none;
     cursor: pointer;
     transition: filter 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .btn:hover {
     filter: brightness(90%);
+}
+
+
+.about-us {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.900), rgba(255, 255, 255, 0.950)), url('background-image.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.containerab {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    justify-content: space-between;
+   
+    
+     
+}
+.about-us {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.about-us .container {
+    position: relative;
+    z-index: 1;
+}
+.about-us span{
+    color: #f04318;
+    
+
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 700px;
+}
+
+/* Products Gallery */
+.products-gallery {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.900), rgba(255, 255, 255, 0.900));
+    padding: 50px 0;
+}
+
+.containernav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.product {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.product p {
+    color: #666;
+    margin-bottom: 15px;
+}
+.product img {
+    width: 100%; /* Maintain responsiveness */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the entire space */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn {
+    padding: 8px 20px;
+    background-color: #f04318;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7043;
+}
+
+/* Responsive layout */
+
+@media (min-width: 768px) {
+    .containernav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .product {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
 }
